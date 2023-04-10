@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.crew-section {
+  @apply bg-crewBackground bg-no-repeat bg-cover bg-center h-[100%];
+}
+
+.background {
+  @apply bg-[#0B0D17] bg-opacity-70 bg-blend-screen;
+}
+
+.crew-container {
+  @apply flex flex-col text-center items-center px-6;
+}
+
+.crew-cta {
+  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8;
+}
+
+.crew-01 {
+  @apply me-2 opacity-25;
+}

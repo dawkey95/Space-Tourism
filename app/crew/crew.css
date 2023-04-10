@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-container {
+  @apply mt-5;
+}
+
+.image-container {
+  @apply flex flex-row justify-center border-b border-solid border-spaceBorder pl-5 mt-8 w-[20.4375rem];
+}
+
+.role {
+  @apply text-spaceWhite opacity-50 font-belle text-[1rem] mt-8;
+}
+
+.title {
+  @apply text-[1.5rem] font-belle text-spaceWhite mt-2;
+}
+
+.bio-details {
+  @apply text-spaceLight font-barlow text-[15px] leading-[25px] mt-4;
+}

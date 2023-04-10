@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.crew-navbar {
+  @apply mt-8;
+}
+
+.crew-list {
+  @apply flex flex-row justify-center items-center w-full gap-x-4;
+}
+
+.btn {
+  @apply flex flex-row justify-center gap-x-4 bg-spaceWhite opacity-[0.17] w-[10px] h-[10px] rounded-full hover:opacity-50;
+}
+
+.btn-active {
+  @apply flex flex-row justify-center gap-x-4 bg-spaceWhite w-[10px] h-[10px] rounded-full !important;
+}

@@ -63,12 +63,15 @@ const NavHeader = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav-crew" href="/crew">
+              <Link className="nav-crew" href="/crew/douglas-hurley">
                 <strong aria-hidden="true">02</strong>Crew
               </Link>
             </li>
             <li>
-              <Link className="nav-technology" href="/technology">
+              <Link
+                className="nav-technology"
+                href="/technology/launch-vehicle"
+              >
                 <strong aria-hidden="true">03</strong>Technology
               </Link>
             </li>

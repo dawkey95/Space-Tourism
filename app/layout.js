@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      favicon="./favicon-32x32.png"
       className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}
     >
       <body>{children}</body>
