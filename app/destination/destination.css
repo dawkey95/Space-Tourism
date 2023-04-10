@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 .destination-section {
-  @apply bg-destinationBackground bg-no-repeat bg-cover bg-center h-[100%];
+  @apply bg-destinationMobile md:bg-destinationTablet bg-no-repeat bg-cover bg-center min-h-[100vh];
 }
 
 .destination-container {
-  @apply flex flex-col text-center items-center px-6;
+  @apply flex flex-col text-center items-start px-10 md:mt-10;
 }
 
 .destination-cta {
-  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8;
+  @apply font-barlowCondensed text-[1rem] md:text-[20px] text-spaceWhite mb-8 md:mb-[3.75rem];
 }
 
 .destination-01 {
-  @apply me-2 opacity-25;
+  @apply me-2 opacity-25 md:me-5;
 }

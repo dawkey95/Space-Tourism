@@ -16,6 +16,7 @@ const NavHeader = () => {
     <>
       <header className="header">
         <Image
+          className="logo"
           src="/assets/shared/logo.svg"
           width={40}
           height={40}
@@ -50,7 +51,7 @@ const NavHeader = () => {
         <nav>
           <ul
             id="primary-navigation"
-            className={nav ? "primary-navigation-active" : "primary-navigation"}
+            className={nav ? "primary-navigation-active" : "primary-navigation tablet-primary"}
           >
             <li>
               <Link className="nav-home" href="/">

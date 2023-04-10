@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .crew-section {
-  @apply bg-crewBackground bg-no-repeat bg-cover bg-center h-[100%];
+  @apply bg-crewBackground bg-no-repeat bg-cover bg-center h-[100%] md:overflow-hidden;
 }
 
 .background {
@@ -11,11 +11,11 @@
 }
 
 .crew-container {
-  @apply flex flex-col text-center items-center px-6;
+  @apply flex flex-col text-center items-center px-6 h-[100%];
 }
 
 .crew-cta {
-  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8;
+  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8 md:mb-0;
 }
 
 .crew-02 {

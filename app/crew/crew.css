@@ -3,21 +3,33 @@
 @tailwind utilities;
 
 .text-container {
-  @apply mt-5;
+  @apply mt-5 md:mx-[9.6875rem] md:mt-0;
 }
 
 .image-container {
-  @apply flex flex-row justify-center border-b border-solid border-spaceBorder pl-5 mt-8 w-[20.4375rem];
+  @apply flex flex-row justify-center border-b border-solid border-spaceBorder pl-5 mt-8 w-[20.4375rem] md:hidden;
 }
 
 .role {
-  @apply text-spaceWhite opacity-50 font-belle text-[1rem] mt-8;
+  @apply text-spaceWhite opacity-50 font-belle text-[1rem] mt-8 md:text-[1.5rem];
 }
 
 .title {
-  @apply text-[1.5rem] font-belle text-spaceWhite mt-2;
+  @apply text-[1.5rem] font-belle text-spaceWhite mt-2 md:text-[2.5rem];
 }
 
 .bio-details {
-  @apply text-spaceLight font-barlow text-[15px] leading-[25px] mt-4;
+  @apply text-spaceLight font-barlow text-[15px] leading-[25px] mt-4 md:text-[1rem];
+}
+
+.mobile-crew {
+  @apply block md:hidden;
+}
+
+.tablet-crew {
+  @apply hidden md:block lg:hidden md:mt-10 md:relative md:bottom-[-40px];
+}
+
+.desktop-crew {
+  @apply hidden lg:block;
 }

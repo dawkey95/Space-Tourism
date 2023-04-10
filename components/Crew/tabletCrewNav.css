@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.crew-navbar {
+.tablet-crew-navbar {
   @apply mt-8;
 }
 
-.crew-list {
-  @apply flex flex-row justify-center items-center w-full gap-x-4 md:hidden;
+.tablet-crew-list {
+  @apply flex flex-row justify-center items-center w-full gap-x-4 hidden md:inline-flex;
 }
 
 .btn {

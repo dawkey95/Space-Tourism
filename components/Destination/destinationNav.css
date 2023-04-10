@@ -7,15 +7,15 @@
 }
 
 .destination-list {
-  @apply flex flex-row justify-between items-center w-full gap-x-4;
+  @apply flex flex-row justify-between items-center w-full gap-x-4 md:gap-x-9;
 }
 
 .planet {
-  @apply font-barlowCondensed text-[0.875rem] text-spaceLight;
+  @apply font-barlowCondensed text-[0.875rem] md:text-[1rem] text-spaceLight;
 }
 
 .planet-active {
-  @apply font-barlowCondensed text-[0.875rem] underline text-spaceWhite !important;
+  @apply font-barlowCondensed text-[0.875rem] md:text-[1rem] underline text-spaceWhite !important;
 }
 
 .moon {

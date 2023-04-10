@@ -1,4 +1,5 @@
 import CrewNav from "@/components/Crew/crewNav";
+import TabletCrewNav from "@/components/Crew/tabletCrewNav";
 import Image from "next/image";
 import "../crew.css";
 import data from "/data/data.json";
@@ -9,6 +10,7 @@ const Douglas = () => {
     <>
       <div className="image-container">
         <Image
+          className="mobile-crew"
           src={douglasData.images.png}
           width={177}
           height={222}
@@ -21,6 +23,14 @@ const Douglas = () => {
         <h1 className="title">{douglasData.name.toUpperCase()}</h1>
         <p className="bio-details">{douglasData.bio}</p>
       </div>
+      <TabletCrewNav />
+      <Image
+        className="tablet-crew"
+        src={douglasData.images.png}
+        width={385}
+        height={500}
+        alt="douglas hurley"
+      />
     </>
   );
 };
