@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-container {
+  @apply mt-5;
+}
+
+.image-container {
+  @apply flex flex-row justify-center w-full;
+}
+
+.terminology-title {
+  @apply text-spaceLight text-[0.875rem] font-barlowCondensed mt-6;
+}
+
+.title {
+  @apply text-[1.5rem] font-belle text-spaceWhite mt-2;
+}
+
+.description {
+  @apply text-spaceLight text-center font-belle text-[0.9375rem] leading-[1.5625rem] mt-4 mx-6;
+}

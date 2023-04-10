@@ -9,7 +9,7 @@ const DestinationLayout = ({ children }) => {
           <Header />
           <div className="crew-container">
             <h2 className="crew-cta">
-              <strong className="crew-01">02</strong> MEET YOUR CREW
+              <strong className="crew-02">02</strong> MEET YOUR CREW
             </h2>
             {children}
           </div>

@@ -10,7 +10,7 @@ const Mark = () => {
       <div className="image-container">
         <Image
           src={markData.images.png}
-          width={177}
+          width={152}
           height={222}
           alt="mark shuttleworth"
         />

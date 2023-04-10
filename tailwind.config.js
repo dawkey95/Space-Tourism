@@ -27,7 +27,8 @@ module.exports = {
         "desktop-background": "url(/assets/home/background-home-desktop.jpg)",
         destinationBackground:
           "url(/assets/destination/background-destination-mobile.jpg)",
-          crewBackground: "url(/assets/crew/background-crew-mobile.jpg)",
+        crewBackground: "url(/assets/crew/background-crew-mobile.jpg)",
+        technologyBackground: 'url("/assets/technology/background-technology-mobile.jpg")',
       },
       boxShadow: {
         buttonShadow: "0px 0px 0px 40px rgba(255,255,255, 0.1)",
