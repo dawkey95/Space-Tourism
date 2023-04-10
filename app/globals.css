@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-spaceDark text-spaceWhite
+}
+
+main {
+  @apply bg-mobile-background bg-no-repeat bg-cover bg-center h-[100vh];
+}

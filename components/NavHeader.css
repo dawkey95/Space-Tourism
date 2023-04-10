@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  @apply flex flex-row gap-x-4 justify-between items-center p-6;
+}
+
+.primary-navigation {
+  @apply flex flex-col gap-y-6 fixed top-0 left-[30%] right-0 gap-x-1 font-barlowCondensed text-[1rem] list-none p-0 m-0
+  bg-spaceMenu backdrop-blur-[1.5rem] h-[100vh] pt-[9rem] px-8 z-[1000] translate-x-[100%];
+}
+
+.primary-navigation-active {
+  @apply flex flex-col gap-y-6 fixed top-0 left-[30%] right-0 gap-x-1 font-barlowCondensed text-[1rem] list-none p-0 m-0
+  bg-spaceMenu backdrop-blur-[1.5rem] h-[100vh] pt-[9rem] px-8 z-[1000] translate-x-0 !important;
+}
+
+.primary-navigation-active a > [aria-hidden="true"] {
+  @apply me-[0.5rem];
+}
+
+.mobile-nav-toggle {
+  @apply absolute w-[1rem] top-[2rem] right-[2rem] z-[9999] md:hidden;
+}
+
+.nav-home {
+  @apply hover:underline;
+}
+
+.nav-destinations {
+  @apply hover:underline;
+}
+
+.nav-crew {
+  @apply hover:underline;
+}
+
+.nav-technology {
+  @apply hover:underline;
+}
