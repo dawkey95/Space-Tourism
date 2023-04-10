@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.destination-navbar {
+  @apply mt-[1.625rem];
+}
+
+.destination-list {
+  @apply flex flex-row justify-between items-center w-full gap-x-4;
+}
+
+.planet {
+  @apply font-barlowCondensed text-[0.875rem] text-spaceLight;
+}
+
+.planet-active {
+  @apply font-barlowCondensed text-[0.875rem] underline text-spaceWhite !important;
+}
+
+.moon {
+  @apply hover:underline;
+}
+.mars {
+  @apply hover:underline;
+}
+
+.europa {
+  @apply hover:underline;
+}
+
+.titan {
+  @apply hover:underline;
+}

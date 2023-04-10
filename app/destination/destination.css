@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.destination-section {
+  @apply bg-destinationBackground bg-no-repeat bg-cover bg-center h-[100%];
+}
+
+.destination-container {
+  @apply flex flex-col text-center items-center px-6;
+}
+
+.destination-cta {
+  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8;
+}
+
+.destination-01 {
+  @apply me-2 opacity-25;
+}

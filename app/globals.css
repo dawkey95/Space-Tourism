@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-spaceDark text-spaceWhite
+  @apply bg-spaceDark text-spaceWhite;
 }
 
 main {

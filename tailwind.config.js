@@ -14,6 +14,7 @@ module.exports = {
         spaceLight: "#D0D6F9",
         spaceWhite: "#FFFFFF",
         spaceMenu: "rgba(255, 255, 255, 0.04)",
+        spaceBorder: "#383B4B",
       },
       fontFamily: {
         belle: ["var(--font-bellefair)"],
@@ -24,6 +25,8 @@ module.exports = {
         "mobile-background": "url(/assets/home/background-home-mobile.jpg)",
         "tablet-background": "url(/assets/home/background-home-tablet.jpg)",
         "desktop-background": "url(/assets/home/background-home-desktop.jpg)",
+        destinationBackground:
+          "url(/assets/destination/background-destination-mobile.jpg)",
       },
       boxShadow: {
         buttonShadow: "0px 0px 0px 40px rgba(255,255,255, 0.1)",

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-container {
+  @apply mt-5;
+}
+
+.title{
+  @apply text-[3.5rem] font-belle text-spaceWhite;
+}
+
+.details {
+  @apply text-spaceLight text-[0.9375rem] pb-8 border-b border-solid border-spaceBorder;
+}
+
+.distance, .travel-time {
+  @apply mt-8;
+}
+
+.distance-title, .travel-title {
+  @apply text-spaceLight font-barlowCondensed text-[0.875rem] mb-3;
+}
+
+.distance-details, .travel-details {
+  @apply text-spaceWhite font-belle text-[1.75rem];
+}

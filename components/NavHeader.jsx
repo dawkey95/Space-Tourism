@@ -50,7 +50,7 @@ const NavHeader = () => {
         <nav>
           <ul
             id="primary-navigation"
-            className={nav ? 'primary-navigation-active' : 'primary-navigation'}
+            className={nav ? "primary-navigation-active" : "primary-navigation"}
           >
             <li>
               <Link className="nav-home" href="/">
@@ -58,7 +58,7 @@ const NavHeader = () => {
               </Link>
             </li>
             <li>
-              <Link className="nav-destinations" href="/destinations">
+              <Link className="nav-destination" href="/destination/moon">
                 <strong aria-hidden="true">01</strong>Destinations
               </Link>
             </li>
