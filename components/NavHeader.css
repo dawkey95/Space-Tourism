@@ -38,17 +38,21 @@
 }
 
 .nav-home {
-  @apply hover:underline;
+  @apply hover:underline md:hover:no-underline;
 }
 
 .nav-destination {
-  @apply hover:underline;
+  @apply hover:underline md:hover:no-underline;
 }
 
 .nav-crew {
-  @apply hover:underline;
+  @apply hover:underline md:hover:no-underline;
 }
 
 .nav-technology {
-  @apply hover:underline;
+  @apply hover:underline md:hover:no-underline;
+}
+
+.active-link {
+  @apply md:pb-7 md:border-b-2
 }

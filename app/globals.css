@@ -7,5 +7,5 @@ body {
 }
 
 main {
-  @apply bg-mobile-background bg-no-repeat bg-cover bg-center min-h-[100vh] md:bg-tablet-background md:h-[100%];
+  @apply bg-mobile-background bg-no-repeat bg-cover bg-center min-h-[100vh] md:bg-tablet-background md:h-[100%] xl:bg-desktop-background;
 }

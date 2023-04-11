@@ -4,12 +4,55 @@ import Image from "next/image";
 import Link from "next/link";
 import "./NavHeader.css";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { checkCustomRoutes } from "next/dist/lib/load-custom-routes";
 
 const NavHeader = () => {
   const [nav, setNav] = useState(false);
+  const path = usePathname();
 
   const handleClick = () => {
     setNav((prev) => !prev);
+  };
+
+  const checkDestination = () => {
+    if (path === "/destination/moon") {
+      return "nav-destination active-link";
+    } else if (path === "/destination/mars") {
+      return "nav-destination active-link";
+    } else if (path === "/destination/titan") {
+      return "nav-destination active-link";
+    } else if (path === "/destination/europa") {
+      return "nav-destination active-link";
+    } else {
+      return "nav-destination";
+    }
+  };
+
+  const checkCrew = () => {
+    if (path === "/crew/douglas-hurley") {
+      return "nav-crew active-link";
+    } else if (path === "/crew/mark-shuttleworth") {
+      return "nav-crew active-link";
+    } else if (path === "/crew/victor-glover") {
+      return "nav-crew active-link";
+    } else if (path === "/crew/anousheh-ansari") {
+      return "nav-crew active-link";
+    } else {
+      return "nav-crew";
+    }
+  };
+
+  const checkTech = () => {
+    if (path === "/technology/space-launcher") {
+      return "nav-technology active-link";
+    } else if (path === "/technology/space-port") {
+      return "nav-technology active-link";
+    } else if (path === "/technology/space-capsule") {
+      return "nav-technology active-link";
+    } else {
+      return "nav-technology";
+    }
   };
 
   return (
@@ -51,28 +94,32 @@ const NavHeader = () => {
         <nav>
           <ul
             id="primary-navigation"
-            className={nav ? "primary-navigation-active" : "primary-navigation tablet-primary"}
+            className={
+              nav
+                ? "primary-navigation-active"
+                : "primary-navigation tablet-primary"
+            }
           >
             <li>
-              <Link className="nav-home" href="/">
+              <Link
+                className={path === "/" ? "nav-home active-link" : "nav-home"}
+                href="/"
+              >
                 <strong aria-hidden="true">00</strong>Home
               </Link>
             </li>
             <li>
-              <Link className="nav-destination" href="/destination/moon">
+              <Link className={checkDestination()} href="/destination/moon">
                 <strong aria-hidden="true">01</strong>Destinations
               </Link>
             </li>
             <li>
-              <Link className="nav-crew" href="/crew/douglas-hurley">
+              <Link className={checkCrew()} href="/crew/douglas-hurley">
                 <strong aria-hidden="true">02</strong>Crew
               </Link>
             </li>
             <li>
-              <Link
-                className="nav-technology"
-                href="/technology/space-launcher"
-              >
+              <Link className={checkTech()} href="/technology/space-launcher">
                 <strong aria-hidden="true">03</strong>Technology
               </Link>
             </li>
