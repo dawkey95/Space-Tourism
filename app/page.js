@@ -17,9 +17,9 @@ export default function Home() {
             world experience!
           </p>
         </div>
-        <button className="home-btn">
-          <Link href="/destination/moon">EXPLORE</Link>
-        </button>
+        <Link href="/destination/moon">
+          <button className="home-btn">EXPLORE</button>
+        </Link>
       </section>
     </main>
   );
