@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .crew-section {
-  @apply bg-crewBackground bg-no-repeat bg-cover bg-center h-[100%] md:overflow-hidden;
+  @apply bg-crewBackground bg-no-repeat bg-cover bg-center min-h-[100vh] md:overflow-hidden;
 }
 
 .background {
@@ -11,13 +11,17 @@
 }
 
 .crew-container {
-  @apply flex flex-col text-center items-center px-6 h-[100%];
+  @apply flex flex-col text-center items-center px-6 h-[100%] md:items-start md:ml-10 md:mt-10;
 }
 
 .crew-cta {
-  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8 md:mb-0;
+  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8 md:mb-0 md:text-[1.25rem];
 }
 
 .crew-02 {
   @apply me-2 opacity-25;
+}
+
+.nav-img-container {
+  @apply flex flex-col items-center w-full;
 }

@@ -23,14 +23,16 @@ const Douglas = () => {
         <h1 className="title">{douglasData.name.toUpperCase()}</h1>
         <p className="bio-details">{douglasData.bio}</p>
       </div>
-      <TabletCrewNav />
-      <Image
-        className="tablet-crew"
-        src={douglasData.images.png}
-        width={385}
-        height={500}
-        alt="douglas hurley"
-      />
+      <div className="nav-img-container">
+        <TabletCrewNav />
+        <Image
+          className="tablet-crew"
+          src={douglasData.images.png}
+          width={385}
+          height={500}
+          alt="douglas hurley"
+        />
+      </div>
     </>
   );
 };

@@ -27,7 +27,7 @@
 }
 
 .tablet-crew {
-  @apply hidden md:block lg:hidden md:mt-10 md:relative md:bottom-[-40px];
+  @apply hidden md:block lg:hidden md:mt-10 md:relative md:bottom-[-20px];
 }
 
 .desktop-crew {
