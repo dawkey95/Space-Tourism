@@ -29,6 +29,8 @@ module.exports = {
           "url(/assets/destination/background-destination-mobile.jpg)",
         destinationTablet:
           "url(/assets/destination/background-destination-tablet.jpg)",
+        destinationDesktop:
+          "url(/assets/destination/background-destination-desktop.jpg)",
         crewBackground: "url(/assets/crew/background-crew-mobile.jpg)",
         technologyBackground:
           'url("/assets/technology/background-technology-mobile.jpg")',

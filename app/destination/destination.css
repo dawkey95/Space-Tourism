@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .destination-section {
-  @apply bg-destinationMobile md:bg-destinationTablet bg-no-repeat bg-cover bg-center min-h-[100vh];
+  @apply bg-destinationMobile md:bg-destinationTablet xl:bg-destinationDesktop bg-no-repeat bg-cover bg-center min-h-[100vh];
 }
 
 .destination-container {
@@ -11,7 +11,7 @@
 }
 
 .destination-cta {
-  @apply font-barlowCondensed text-[1rem] md:text-[20px] text-spaceWhite mb-8 md:mb-[3.75rem];
+  @apply font-barlowCondensed text-[1rem] md:text-[20px] text-spaceWhite mb-8 md:mb-[3.75rem] xl:text-[1.75rem] xl:ml-[8rem];
 }
 
 .destination-01 {

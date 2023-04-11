@@ -3,40 +3,48 @@
 @tailwind utilities;
 
 .planet-container {
-  @apply flex flex-col items-center md:mx-[2rem];
+  @apply flex flex-col items-center md:mx-[2rem] xl:flex-row;
 }
 
 .text-container {
-  @apply mt-5 text-center;
+  @apply mt-5 text-center xl:text-justify;
+}
+
+.content-container {
+  @apply xl:flex xl:flex-col xl:items-start xl:mx-[10rem];
 }
 
 .details-container {
-  @apply md:flex md:flex-row md:gap-x-12 md:text-center md:items-center md:mb-[3.875rem];
+  @apply md:flex md:flex-row md:gap-x-12 md:text-center md:items-center md:mb-[3.875rem] xl:gap-x-24;
 }
 
 .mobile-image {
   @apply block md:hidden;
 }
 
+.mobile {
+  @apply block xl:hidden;
+}
+
 .tablet-image {
-  @apply hidden md:block lg:hidden md:mb-8;
+  @apply hidden md:block xl:hidden md:mb-8;
 }
 
 .desktop-image {
-  @apply hidden lg:block;
+  @apply hidden xl:block xl:ml-[5rem] xl:mt-12;
 }
 
 .title {
-  @apply text-[3.5rem] font-belle text-spaceWhite md:text-[5rem];
+  @apply text-[3.5rem] font-belle text-spaceWhite md:text-[5rem] xl:text-[6.25rem];
 }
 
 .details {
-  @apply text-spaceLight text-[0.9375rem] md:text-[1rem] md:leading-[1.75rem] pb-8 md:pb-12 border-b border-solid border-spaceBorder md:mt-2;
+  @apply text-spaceLight text-[0.9375rem] md:text-[1rem] md:leading-[1.75rem] pb-8 md:pb-12 border-b border-solid border-spaceBorder md:mt-2 xl:text-[1.15rem];
 }
 
 .distance,
 .travel-time {
-  @apply mt-8;
+  @apply mt-8 xl:text-left;
 }
 
 .distance-title,

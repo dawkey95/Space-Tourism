@@ -25,25 +25,27 @@ const Titan = () => {
         <Image
           className="desktop-image"
           src={titanData.images.webp}
-          width={170}
-          height={170}
+          width={445}
+          height={445}
           alt="titan"
         />
-        <DestinationNav />
-        <div className="text-container">
-          <h1 className="title">{titanData.name.toUpperCase()}</h1>
-          <p className="details">{titanData.description}</p>
-        </div>
-        <div className="details-container">
-          <div className="distance">
-            <h2 className="distance-title">AVG. DISTANCE</h2>
-            <p className="distance-details">
-              {titanData.distance.toUpperCase()}
-            </p>
+        <div className="content-container">
+          <DestinationNav />
+          <div className="text-container">
+            <h1 className="title">{titanData.name.toUpperCase()}</h1>
+            <p className="details">{titanData.description}</p>
           </div>
-          <div className="travel-time">
-            <h2 className="travel-title">EST. TRAVEL TIME</h2>
-            <p className="travel-details">{titanData.travel.toUpperCase()}</p>
+          <div className="details-container">
+            <div className="distance">
+              <h2 className="distance-title">AVG. DISTANCE</h2>
+              <p className="distance-details">
+                {titanData.distance.toUpperCase()}
+              </p>
+            </div>
+            <div className="travel-time">
+              <h2 className="travel-title">EST. TRAVEL TIME</h2>
+              <p className="travel-details">{titanData.travel.toUpperCase()}</p>
+            </div>
           </div>
         </div>
       </div>
