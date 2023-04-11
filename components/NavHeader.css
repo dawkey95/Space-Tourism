@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .header {
-  @apply flex flex-row gap-x-4 justify-between items-center p-6 md:p-0;
+  @apply flex flex-row gap-x-4 justify-between items-center p-6 md:p-0 xl:pt-10;
 }
 
 .logo {
@@ -12,7 +12,7 @@
 
 .tablet-primary {
   @apply flex flex-row font-barlowCondensed text-[1rem] list-none p-0 m-0 bg-spaceMenu backdrop-blur-[1.5rem] z-[1000] 
-  md:gap-x-9 md:static md:py-10 md:px-12 md:items-center md:justify-start md:text-[0.875rem] w-[100%] md:h-[3rem] md:translate-x-0 !important;
+  md:gap-x-9 md:static md:py-10 md:px-12 md:items-center md:justify-start md:text-[1.5rem] w-[100%] md:h-[3rem] md:translate-x-0 xl:mr-[10rem] xl:pl-[5rem] !important;
 }
 
 .tablet-primary a > [aria-hidden="true"] {
@@ -54,5 +54,5 @@
 }
 
 .active-link {
-  @apply md:pb-7 md:border-b-2
+  @apply md:pb-7 md:border-b-2;
 }

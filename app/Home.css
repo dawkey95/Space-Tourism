@@ -3,26 +3,27 @@
 @tailwind utilities;
 
 .home-container {
-  @apply flex flex-col items-center justify-center;
+  @apply flex flex-col items-center justify-center xl:flex-row xl:mx-[10rem] xl:gap-x-[20rem];
 }
 
 .text-container {
-  @apply mt-6 mb-10 mx-6 text-center md:mt-[6.625rem] md:mx-[10rem];
+  @apply mt-6 mb-10 mx-6 text-center md:mt-[6.625rem] xl:mt-[15rem] xl:text-justify xl:w-[28.125rem] xl:mb-[8.1875rem];
 }
 
 .home-title {
-  @apply text-[5rem] md:text-[150px] my-4 md:my-6 font-belle;
+  @apply text-[5rem] md:text-[150px] my-4 md:my-6 font-belle xl:text-[10rem] xl:leading-[10rem];
 }
 
 .top-para {
-  @apply text-[1rem] md:text-[1.25rem] text-spaceLight font-barlowCondensed;
+  @apply text-[1rem] md:text-[1.25rem] text-spaceLight font-barlowCondensed xl:text-[1.75rem];
 }
 
 .bot-para {
-  @apply text-[0.9375rem] md:text-[1rem] md:leading-[1.75rem] text-spaceLight font-barlow;
+  @apply text-[0.9375rem] md:text-[1rem] md:leading-[1.75rem] text-spaceLight font-barlow xl:text-[1.125rem];
 }
 
 .home-btn {
   @apply mt-10 w-[9.375rem] h-[9.375rem] rounded-[50%] bg-spaceWhite text-black font-belle text-[1.25rem]
-  hover:shadow-buttonShadow md:mt-[156px] md:mb-[5.625rem] md:w-[15.125rem] md:h-[15.125rem];
+  hover:shadow-buttonShadow md:mt-[9.75rem] md:mb-[5.625rem] md:w-[15.125rem] md:h-[15.125rem]
+  xl:text-[2rem] xl:w-[17.125rem] xl:h-[17.125rem] xl:mt-[20rem];
 }
