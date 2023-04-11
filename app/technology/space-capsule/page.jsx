@@ -13,10 +13,25 @@ const Capsule = () => {
           width={375}
           height={170}
           alt="space launcher"
+          className="mobile-tech"
+        />
+        <Image
+          src={capsuleData.images.landscape}
+          width={768}
+          height={310}
+          alt="space launcher"
+          className="tablet-tech"
+        />
+        <Image
+          src={capsuleData.images.landscape}
+          width={768}
+          height={310}
+          alt="space launcher"
+          className="desktop-tech"
         />
       </div>
-      <TechNav />
       <div className="text-container">
+        <TechNav />
         <h2 className="terminology-title">THE TERMINOLOGY...</h2>
         <h1 className="title">{capsuleData.name.toUpperCase()}</h1>
         <p className="description">{capsuleData.description}</p>

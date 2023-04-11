@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tech-section {
-  @apply bg-technologyBackground bg-no-repeat bg-cover bg-center h-[100vh];
+  @apply bg-technologyBackground bg-no-repeat bg-cover bg-center min-h-[100vh];
 }
 
 .background {
@@ -11,11 +11,11 @@
 }
 
 .tech-container {
-  @apply flex flex-col text-center items-center;
+  @apply flex flex-col text-center items-center md:mt-10 md:items-start;
 }
 
 .tech-cta {
-  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8;
+  @apply font-barlowCondensed text-[1rem] md:text-[20ppx] text-spaceWhite mb-8 md:ml-10;
 }
 
 .tech-03 {
