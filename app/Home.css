@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .home-container {
-  @apply flex flex-col items-center justify-center xl:flex-row xl:mx-[10rem] xl:gap-x-[20rem];
+  @apply flex flex-col items-center justify-center xl:flex-row xl:mx-[2rem] xl:gap-x-[25rem];
 }
 
 .text-container {
@@ -25,5 +25,5 @@
 .home-btn {
   @apply mt-10 w-[9.375rem] h-[9.375rem] rounded-[50%] bg-spaceWhite text-black font-belle text-[1.25rem]
   hover:shadow-buttonShadow md:mt-[9.75rem] md:mb-[5.625rem] md:w-[15.125rem] md:h-[15.125rem]
-  xl:text-[2rem] xl:w-[17.125rem] xl:h-[17.125rem] xl:mt-[20rem];
+  xl:text-[2rem] xl:w-[17.125rem] xl:h-[17.125rem] xl:mt-[15rem];
 }
