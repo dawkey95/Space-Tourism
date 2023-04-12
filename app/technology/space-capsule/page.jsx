@@ -1,4 +1,4 @@
-import TechNav from "/components/tech/techNav";
+import TechNav from "@/components/Tech/techNav";
 import Image from "next/image";
 import "../technology.css";
 import data from "/data/data.json";
