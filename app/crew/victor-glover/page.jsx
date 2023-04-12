@@ -18,20 +18,29 @@ const Victor = () => {
         />
       </div>
       <CrewNav />
-      <div className="text-container">
-        <p className="role">{victorData.role.toUpperCase()}</p>
-        <h1 className="title">{victorData.name.toUpperCase()}</h1>
-        <p className="bio-details">{victorData.bio}</p>
-      </div>
-      <div className="nav-img-container">
-        <TabletCrewNav />
-        <Image
-          className="tablet-crew"
-          src={victorData.images.png}
-          width={385}
-          height={500}
-          alt="victor glover"
-        />
+      <div className="content-container">
+        <div className="text-container">
+          <p className="role">{victorData.role.toUpperCase()}</p>
+          <h1 className="title">{victorData.name.toUpperCase()}</h1>
+          <p className="bio-details">{victorData.bio}</p>
+          <TabletCrewNav />
+        </div>
+        <div className="nav-img-container">
+          <Image
+            className="tablet-crew"
+            src={victorData.images.png}
+            width={385}
+            height={500}
+            alt="victor glover"
+          />
+          <Image
+            className="desktop-crew"
+            src={victorData.images.png}
+            width={554}
+            height={681}
+            alt="victor glover"
+          />
+        </div>
       </div>
     </>
   );

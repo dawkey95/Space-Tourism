@@ -15,7 +15,7 @@
 }
 
 .details-container {
-  @apply md:flex md:flex-row md:gap-x-12 md:text-center md:items-center md:mb-[3.875rem] xl:gap-x-24;
+  @apply md:flex md:flex-row md:gap-x-12 md:text-center md:justify-center md:items-center md:mb-[3.875rem] xl:gap-x-24;
 }
 
 .mobile-image {

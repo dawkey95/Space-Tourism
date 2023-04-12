@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-spaceDark text-spaceWhite;
+  @apply bg-spaceDark text-spaceWhite xl:overflow-y-hidden;
 }
 
 main {
-  @apply bg-mobile-background bg-no-repeat bg-cover bg-center min-h-[100vh] md:bg-tablet-background md:h-[100%] xl:bg-desktop-background;
+  @apply bg-mobile-background bg-no-repeat bg-cover bg-center min-h-[100vh] md:bg-tablet-background md:h-[100%] xl:bg-desktop-background xl:h-[100vh];
 }

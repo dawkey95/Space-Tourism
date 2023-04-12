@@ -7,13 +7,13 @@
 }
 
 .tech-list {
-  @apply flex flex-row justify-center items-center w-full gap-x-4;
+  @apply flex flex-row justify-center items-center w-full gap-x-4 xl:flex-col xl:gap-y-5 xl:justify-start;
 }
 
 .btn {
-  @apply flex flex-row items-center font-belle text-[1rem] justify-center gap-x-4 bg-transparent w-[2.5rem] h-[2.5rem] rounded-full border border-spaceWhite border-opacity-50 hover:opacity-50;
+  @apply flex flex-row items-center font-belle text-[1rem] justify-center gap-x-4 bg-transparent w-[2.5rem] h-[2.5rem] xl:w-[5rem] xl:h-[5rem] rounded-full border border-spaceWhite border-opacity-50 hover:opacity-50;
 }
 
 .btn-active {
-  @apply flex flex-row font-belle text-[1rem] items-center justify-center gap-x-4 text-spaceDark bg-spaceWhite w-[2.5rem] h-[2.5rem] rounded-full !important;
+  @apply flex flex-row font-belle text-[1rem] items-center justify-center gap-x-4 text-spaceDark bg-spaceWhite w-[2.5rem] h-[2.5rem] xl:w-[5rem] xl:h-[5rem] rounded-full !important;
 }

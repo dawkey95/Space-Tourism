@@ -7,13 +7,13 @@
 }
 
 .tablet-crew-list {
-  @apply flex flex-row justify-center items-center w-full gap-x-4 hidden md:inline-flex;
+  @apply flex flex-row justify-center xl:justify-start items-center w-full gap-x-4 hidden md:inline-flex xl:mt-[3rem];
 }
 
 .btn {
-  @apply flex flex-row justify-center gap-x-4 bg-spaceWhite opacity-[0.17] w-[10px] h-[10px] rounded-full hover:opacity-50;
+  @apply flex flex-row justify-center gap-x-4 bg-spaceWhite opacity-[0.17] w-[10px] h-[10px] xl:w-[15px] xl:h-[15px] rounded-full hover:opacity-50;
 }
 
 .btn-active {
-  @apply flex flex-row justify-center gap-x-4 bg-spaceWhite w-[10px] h-[10px] rounded-full !important;
+  @apply flex flex-row justify-center gap-x-4 bg-spaceWhite w-[10px] h-[10px] xl:w-[15px] xl:h-[15px] rounded-full !important;
 }

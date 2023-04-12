@@ -22,20 +22,22 @@ const SpacePort = () => {
           alt="space port"
           className="tablet-tech"
         />
-        <Image
-          src={portData.images.landscape}
-          width={768}
-          height={310}
-          alt="space port"
-          className="desktop-tech"
-        />
       </div>
       <div className="text-container">
         <TechNav />
-        <h2 className="terminology-title">THE TERMINOLOGY...</h2>
-        <h1 className="title">{portData.name.toUpperCase()}</h1>
-        <p className="description">{portData.description}</p>
+        <div className="text-sub">
+          <h2 className="terminology-title">THE TERMINOLOGY...</h2>
+          <h1 className="title">{portData.name.toUpperCase()}</h1>
+          <p className="description">{portData.description}</p>
+        </div>
       </div>
+      <Image
+        src={portData.images.portrait}
+        width={515}
+        height={527}
+        alt="space port"
+        className="desktop-tech"
+      />
     </>
   );
 };

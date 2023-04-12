@@ -18,20 +18,29 @@ const Douglas = () => {
         />
       </div>
       <CrewNav />
-      <div className="text-container">
-        <p className="role">{douglasData.role.toUpperCase()}</p>
-        <h1 className="title">{douglasData.name.toUpperCase()}</h1>
-        <p className="bio-details">{douglasData.bio}</p>
-      </div>
-      <div className="nav-img-container">
-        <TabletCrewNav />
-        <Image
-          className="tablet-crew"
-          src={douglasData.images.png}
-          width={385}
-          height={500}
-          alt="douglas hurley"
-        />
+      <div className="content-container">
+        <div className="text-container">
+          <p className="role">{douglasData.role.toUpperCase()}</p>
+          <h1 className="title">{douglasData.name.toUpperCase()}</h1>
+          <p className="bio-details">{douglasData.bio}</p>
+          <TabletCrewNav />
+        </div>
+        <div className="nav-img-container">
+          <Image
+            className="tablet-crew"
+            src={douglasData.images.png}
+            width={385}
+            height={500}
+            alt="douglas hurley"
+          />
+          <Image
+            className="desktop-crew "
+            src={douglasData.images.png}
+            width={568}
+            height={712}
+            alt="douglas hurley"
+          />
+        </div>
       </div>
     </>
   );

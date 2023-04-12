@@ -32,8 +32,14 @@ module.exports = {
         destinationDesktop:
           "url(/assets/destination/background-destination-desktop.jpg)",
         crewBackground: "url(/assets/crew/background-crew-mobile.jpg)",
+        crewTablet: "url(/assets/crew/background-crew-tablet.jpg)",
+        crewDesktop: "url(/assets/crew/background-crew-desktop.jpg)",
         technologyBackground:
           'url("/assets/technology/background-technology-mobile.jpg")',
+        technologyTablet:
+          'url("/assets/technology/background-technology-tablet.jpg")',
+        technologyDesktop:
+          'url("/assets/technology/background-technology-desktop.jpg")',
       },
       boxShadow: {
         buttonShadow: "0px 0px 0px 40px rgba(255,255,255, 0.1)",

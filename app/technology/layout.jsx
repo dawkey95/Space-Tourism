@@ -7,10 +7,10 @@ const TechLayout = ({ children }) => {
       <section className="tech-section">
         <div className="background">
           <Header />
-          <div className="tech-container">
             <h2 className="tech-cta">
               <strong className="tech-03">03</strong> SPACE LAUNCH 101
             </h2>
+          <div className="tech-container">
             {children}
           </div>
         </div>

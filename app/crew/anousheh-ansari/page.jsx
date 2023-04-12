@@ -18,20 +18,29 @@ const Anousheh = () => {
         />
       </div>
       <CrewNav />
-      <div className="text-container">
-        <p className="role">{anoushehData.role.toUpperCase()}</p>
-        <h1 className="title">{anoushehData.name.toUpperCase()}</h1>
-        <p className="bio-details">{anoushehData.bio}</p>
-      </div>
-      <div className="nav-img-container">
-        <TabletCrewNav />
-        <Image
-          className="tablet-crew"
-          src={anoushehData.images.png}
-          width={385}
-          height={450}
-          alt="anousheh ansari"
-        />
+      <div className="content-container">
+        <div className="text-container">
+          <p className="role">{anoushehData.role.toUpperCase()}</p>
+          <h1 className="title">{anoushehData.name.toUpperCase()}</h1>
+          <p className="bio-details">{anoushehData.bio}</p>
+          <TabletCrewNav />
+        </div>
+        <div className="nav-img-container">
+          <Image
+            className="tablet-crew"
+            src={anoushehData.images.png}
+            width={385}
+            height={450}
+            alt="anousheh ansari"
+          />
+          <Image
+            className="desktop-crew"
+            src={anoushehData.images.png}
+            width={615}
+            height={607}
+            alt="anousheh ansari"
+          />
+        </div>
       </div>
     </>
   );

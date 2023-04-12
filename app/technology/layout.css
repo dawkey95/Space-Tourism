@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 .tech-section {
-  @apply bg-technologyBackground bg-no-repeat bg-cover bg-center min-h-[100vh];
+  @apply bg-technologyBackground md:bg-technologyTablet xl:bg-technologyDesktop bg-no-repeat bg-cover bg-center min-h-[100vh];
 }
 
 .background {
-  @apply bg-[#0B0D17] bg-opacity-70 bg-blend-screen;
+  @apply bg-[#0B0D17] bg-opacity-70 bg-blend-screen xl:min-h-[100vh];
 }
 
 .tech-container {
-  @apply flex flex-col text-center items-center md:mt-10 md:items-start;
+  @apply flex flex-col text-center items-center md:mt-0 md:items-start xl:flex-row xl:h-full;
 }
 
 .tech-cta {
-  @apply font-barlowCondensed text-[1rem] md:text-[20ppx] text-spaceWhite mb-8 md:ml-10;
+  @apply flex flex-row justify-center md:justify-start md:mt-10 font-barlowCondensed text-[1rem] md:text-[20ppx] text-spaceWhite mb-8 md:ml-10 xl:text-[1.75rem];
 }
 
 .tech-03 {
-  @apply me-2 opacity-25;
+  @apply me-2 opacity-25 xl:me-6;
 }

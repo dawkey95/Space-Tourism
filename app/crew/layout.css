@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 .crew-section {
-  @apply bg-crewBackground bg-no-repeat bg-cover bg-center min-h-[100vh] md:overflow-hidden;
+  @apply bg-crewBackground bg-no-repeat bg-cover bg-center min-h-[100vh] md:overflow-hidden md:bg-crewTablet xl:bg-crewDesktop;
 }
 
 .background {
-  @apply bg-[#0B0D17] bg-opacity-70 bg-blend-screen;
+  @apply bg-[#0B0D17] bg-opacity-70 bg-blend-screen xl:min-h-[100vh];
 }
 
 .crew-container {
-  @apply flex flex-col text-center items-center px-6 h-[100%] md:items-start md:ml-10 md:mt-10;
+  @apply flex flex-col text-center items-center px-6 h-[100%] md:items-start md:ml-10 md:mt-10 xl:min-h-[100%] xl:mt-20 xl:ml-[10rem] xl:mr-[10rem] xl:text-left xl:justify-start;
 }
 
 .crew-cta {
-  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8 md:mb-0 md:text-[1.25rem];
+  @apply font-barlowCondensed text-[1rem] text-spaceWhite mb-8 md:mb-0 md:text-[1.25rem] xl:text-[1.75rem];
 }
 
 .crew-02 {
-  @apply me-2 opacity-25;
+  @apply me-2 opacity-25 xl:me-6;
 }
 
 .nav-img-container {

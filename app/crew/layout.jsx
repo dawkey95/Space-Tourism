@@ -1,5 +1,5 @@
 import Header from "@/components/NavHeader";
-import './layout.css';
+import "./layout.css";
 
 const DestinationLayout = ({ children }) => {
   return (

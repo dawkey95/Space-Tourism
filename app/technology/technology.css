@@ -3,23 +3,27 @@
 @tailwind utilities;
 
 .text-container {
-  @apply mt-5 md:mx-[9.6875rem] md:mb-20;
+  @apply mt-5 md:mx-[9.6875rem] md:mb-20 xl:flex xl:flex-row xl:justify-center xl:items-end xl:text-left;
+}
+
+.text-sub {
+  @apply xl:ml-20;
 }
 
 .image-container {
-  @apply flex flex-row justify-center w-[full] m-0 p-0 md:mt-10;
+  @apply flex flex-row justify-center m-0 p-0 md:mt-10;
 }
 
 .terminology-title {
-  @apply text-spaceLight text-[0.875rem] md:text-[1rem] font-barlowCondensed mt-6;
+  @apply text-spaceLight text-[0.875rem] md:text-[1rem] font-barlowCondensed mt-6 xl:mt-0;
 }
 
 .title {
-  @apply text-[1.5rem] md:text-[2.5rem] font-belle text-spaceWhite mt-2;
+  @apply text-[1.5rem] md:text-[2.5rem] font-belle text-spaceWhite mt-2 xl:text-[3rem] xl:mt-6;
 }
 
 .description {
-  @apply text-spaceLight text-center font-belle text-[0.9375rem] leading-[1.5625rem] md:text-[1rem] mt-4 mx-6;
+  @apply text-spaceLight text-center font-belle text-[0.9375rem] leading-[1.5625rem] md:text-[1rem] mt-4 mx-6 xl:mx-0 xl:text-left xl:text-[1.125rem] xl:mt-6;
 }
 
 .mobile-tech {
@@ -27,9 +31,9 @@
 }
 
 .tablet-tech {
-  @apply hidden md:block md:min-w-[100vw] lg:hidden;
+  @apply hidden md:block md:min-w-[100vw] xl:hidden;
 }
 
 .desktop-tech {
-  @apply hidden lg:block;
+  @apply hidden xl:block;
 }

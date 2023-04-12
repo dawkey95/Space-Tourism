@@ -18,20 +18,29 @@ const Mark = () => {
         />
       </div>
       <CrewNav />
-      <div className="text-container">
-        <p className="role">{markData.role.toUpperCase()}</p>
-        <h1 className="title">{markData.name.toUpperCase()}</h1>
-        <p className="bio-details">{markData.bio}</p>
-      </div>
-      <div className="nav-img-container">
-        <TabletCrewNav />
-        <Image
-          className="tablet-crew"
-          src={markData.images.png}
-          width={320}
-          height={500}
-          alt="mark shuttleworth"
-        />
+      <div className="content-container">
+        <div className="text-container">
+          <p className="role">{markData.role.toUpperCase()}</p>
+          <h1 className="title">{markData.name.toUpperCase()}</h1>
+          <p className="bio-details">{markData.bio}</p>
+          <TabletCrewNav />
+        </div>
+        <div className="nav-img-container">
+          <Image
+            className="tablet-crew"
+            src={markData.images.png}
+            width={320}
+            height={500}
+            alt="mark shuttleworth"
+          />
+          <Image
+            className="desktop-crew"
+            src={markData.images.png}
+            width={453}
+            height={654}
+            alt="mark shuttleworth"
+          />
+        </div>
       </div>
     </>
   );
