@@ -1,37 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space tourism website solution
 
-## Getting Started
+This is my solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects. This was a really great project and felt like my first real project where I created a actual website.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Screenshot
+
+![](./public/assets/screenshot.png)
+
+### Links
+
+- Solution URL: [GitHub](https://github.com/dawkey95/Space-Tourism)
+- Live Site URL: [Space Tourism](https://dkcoding-space-tourism.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind](https://tailwindcss.com/) - For styles
+
+### What I learned
+
+The biggest thing I learnt doing this project was how to use NextJS 13 as I have never used nextjs. I learnt how to use the app/ directory. I found nextjs 13 really enjoyable to use and will be focusing my energy on becoming more proficient with nextjs. One my biggest 'oooh' moments was when I needed to figure out how to keep what tab the user is on in the navbar. After a day or so of googling and searching I found that Nextjs 13 utilises
+
+```js
+import { usePathname } from "next/navigation";
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+you create your path variable:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```js
+const path = usePathname();
+```
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.js`.
+this essentially allows you to use the url pathname to conditionally render components:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```js
+<Link href="/crew/douglas-hurley">
+  <button className={path === "/crew/douglas-hurley" ? "btn-active" : "btn"} />
+</Link>
+```
 
-## Learn More
+### Continued development
 
-To learn more about Next.js, take a look at the following resources:
+I want to keep learning NextJS and improve my React skills. I also want to learn more about Tailwind and how to use it in a more efficient way with NextUI and Tailwind Variants. I also want to focus on improving my folder structure and file naming conventions as well as improving my website performance. Learning about metadata and SEO practices alongside learning how to properly use HTML semantics.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Website - [DK Coding](https://dk-personal.netlify.app/)
+- Frontend Mentor - [@dawkey95](https://www.frontendmentor.io/profile/dawkey95)
+- Twitter - [@dawidkeyser95](https://twitter.com/dawidkeyser95)
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# Space-Tourism
+Shout out to my friend Justin who gave me some ideas when I got stuck with the data extraction in the project.
